@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Log In 2 | Minton - Responsive Admin Dashboard Template</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+        <meta content="Coderthemes" name="author" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="../assets/images/favicon.ico">
+        <!-- App css -->
+		<link href="../assets/css/bootstrap-corporate.min.css" rel="stylesheet" type="text/css" id="bs-default-stylesheet" />
+		<link href="../assets/css/app-corporate.min.css" rel="stylesheet" type="text/css" id="app-default-stylesheet" />
+		<link href="../assets/css/bootstrap-corporate-dark.min.css" rel="stylesheet" type="text/css" id="bs-dark-stylesheet" />
+		<link href="../assets/css/app-corporate-dark.min.css" rel="stylesheet" type="text/css" id="app-dark-stylesheet" />
+        <!-- icons -->
+		<link href="../assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+		<style>
+		.auth-fluid {
+            background: url("../assets/images/login_image.jpg") center;
+        }
+		</style>
+    </head>
+
+    <body class="loading auth-fluid-pages pb-0">
+
+        <div class="auth-fluid">
+            <!-- Auth fluid right content -->
+            <div class="auth-fluid-right">
+                <div class="auth-user-testimonial">
+                    <h3 class="mb-3 text-white">앱개발이 너무 늦어 빡이쳐서 만든 웹페이지</h3>
+                    <p class="lead font-weight-normal">
+                        <i class="mdi mdi-format-quote-open"></i>
+                        API 개발 해달라고 하도 쫄라서 만들어줬더니, 시간이 없어??? 하참 기가막히고 코가 막히는 상황임. <br/>
+                        그래서 뭐 어떻게, 나라도 테스트 해야하니 웹페이지를 만드는 수밖에. 설마 이거 완성될때까지 안나오겠어?<br/>
+                        얼마나 고퀄로 앱을 만드는지 함 다같이 지켜봅시다.
+                        <i class="mdi mdi-format-quote-close"></i>
+                    </p>
+                    <h5 class="text-white">
+                        - 전취, 우취, 복취, 깜빵
+                    </h5>
+                </div> <!-- end auth-user-testimonial-->
+            </div>
+            <!-- end Auth fluid right content -->
+
+            <!--Auth fluid left content -->
+            <div class="auth-fluid-form-box">
+                <div class="align-items-center d-flex h-100">
+                    <div class="card-body">
+
+                        <!-- Logo -->
+                        <div class="auth-brand text-center text-lg-left">
+                            <div class="auth-logo">
+                                <a href="index.html" class="logo logo-dark text-center">
+                                    <span class="logo-lg">
+                                        <img src="../assets/images/logo-dark.png" alt="" height="22">
+                                    </span>
+                                </a>
+
+                                <a href="index.html" class="logo logo-light text-center">
+                                    <span class="logo-lg">
+                                        <img src="../assets/images/logo-light.png" alt="" height="22">
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <ul class="nav nav-tabs nav-bordered">
+                            <li class="nav-item">
+                                <a href="#tab-login" data-toggle="tab" aria-expanded="false" class="nav-link active">
+                                    Log In
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#tab-signup" data-toggle="tab" aria-expanded="true" class="nav-link">
+                                    Sign Up
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane show active" id="tab-login">
+                                <p class="text-muted mb-3">Enter your email address and password to access admin panel.</p>
+
+                                <!-- form -->
+                                <form action="#">
+                                    <div class="form-group">
+                                        <label for="emailaddress">Email address</label>
+                                        <input class="form-control" type="email" id="emailaddress" required="" placeholder="Enter your email">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <a href="auth-recoverpw-2.html" class="text-muted float-right"><small>Forgot your password?</small></a>
+                                        <label for="password">Password</label>
+                                        <div class="input-group input-group-merge">
+                                            <input type="password" id="password" class="form-control" placeholder="Enter your password">
+                                            <div class="input-group-append" data-password="false">
+                                                <div class="input-group-text" style="max-height: 35px;">
+                                                    <span class="password-eye"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="checkbox-signin">
+                                            <label class="custom-control-label" for="checkbox-signin">Remember me</label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group mb-0 text-center">
+                                        <button class="btn btn-primary btn-block" type="submit">Log In </button>
+                                    </div>
+                                </form>
+                                <!-- end form-->
+                            </div>
+                            <div class="tab-pane" id="tab-signup">
+                                <p class="text-muted mb-3">Don't have an account? Create your own account, it takes less than a minute</p>
+
+                                <!-- form -->
+                                <form action="#">
+                                    <div class="form-group">
+                                        <label for="fullname">Full Name</label>
+                                        <input class="form-control" type="text" id="fullname" placeholder="Enter your name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="emailaddress">Email address</label>
+                                        <input class="form-control" type="email" id="emailaddress" required placeholder="Enter your email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="password">Password</label>
+                                        <input class="form-control" type="password" required id="password" placeholder="Enter your password">
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="checkbox-signup">
+                                            <label class="custom-control-label" for="checkbox-signup">I accept <a href="javascript: void(0);" class="text-dark">Terms and Conditions</a></label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group mb-0 text-center">
+                                        <button class="btn btn-primary waves-effect waves-light btn-block" type="submit"> Sign Up </button>
+                                    </div>
+                                </form>
+                                <!-- end form-->
+                            </div>
+                        </div>
+
+                        <!-- Footer-->
+                        <footer class="footer footer-alt">
+                            <p class="text-muted"><script>document.write(new Date().getFullYear())</script> &copy; Minton theme by <a href="javascript: void(0);" class="text-dark">Coderthemes</a> </p>
+                        </footer>
+
+                    </div> <!-- end .card-body -->
+                </div> <!-- end .align-items-center.d-flex.h-100-->
+            </div>
+            <!-- end auth-fluid-form-box-->
+        </div>
+        <!-- end auth-fluid-->
+
+        <!-- Vendor js -->
+        <script src="../assets/js/vendor.min.js"></script>
+
+        <!-- App js -->
+        <script src="../assets/js/app.min.js"></script>
+
+    </body>
+</html>
