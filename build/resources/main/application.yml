@@ -1,8 +1,0 @@
-
-spring:
-  thymeleaf:
-    prefix : /views/
-    suffix : .html
-    cache : false
-    check-template: false
-

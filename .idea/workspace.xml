@@ -1,7 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="db74a829-6a8d-47c2-b34c-81768d90bdb7" name="Default Changelist" comment="" />
+    <list default="true" id="db74a829-6a8d-47c2-b34c-81768d90bdb7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wow/web/ServletInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/banner.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/wow/web/WebApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/web-0.0.1-SNAPSHOT.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/com.wow.web.WebApplicationTests.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/js/report.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/com.wow.web.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/logback-spring.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.wow.web.WebApplicationTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/bootWar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/bootWar/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/source-classes-mapping.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/war/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/main.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,6 +106,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1hfAFoQJnGEsMd1cbuA9ZEvmVs7" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -82,12 +122,22 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.3129176" />
     <property name="settings.editor.selected.configurable" value="project.propDebugger" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/assets/images/card" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/views" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/assets/images" />
+      <recent name="$PROJECT_DIR$/src/main/resources/css" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.wow.web" />
+      <recent name="com.wow.web.controller" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src/main/webapp/assets/images/icon" />
@@ -95,18 +145,8 @@
       <recent name="$PROJECT_DIR$/src/main/webapp" />
       <recent name="$PROJECT_DIR$/src/main/resources/css" />
     </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.wow.web" />
-      <recent name="com.wow.web.controller" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/webapp/assets/images/card" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/views" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/assets/images" />
-      <recent name="$PROJECT_DIR$/src/main/resources/css" />
-    </key>
   </component>
-  <component name="RunManager" selected="Gradle.wow-web [bootRun]">
+  <component name="RunManager" selected="Gradle.wow-web [bootWar]">
     <configuration name="wow-web [bootRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -192,9 +232,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.wow-web [bootWar]" />
         <item itemvalue="Gradle.wow-web [bootRun]" />
         <item itemvalue="Gradle.wow-web [clean]" />
-        <item itemvalue="Gradle.wow-web [bootWar]" />
         <item itemvalue="Gradle.wow-web [build]" />
       </list>
     </recent_temporary>
@@ -235,7 +275,9 @@
       <workItem from="1600825552912" duration="17556000" />
       <workItem from="1600909745406" duration="8676000" />
       <workItem from="1600925241851" duration="5194000" />
-      <workItem from="1600936399601" duration="3201000" />
+      <workItem from="1600936399601" duration="4345000" />
+      <workItem from="1600941785886" duration="2398000" />
+      <workItem from="1600996193351" duration="136000" />
     </task>
     <servers />
   </component>
@@ -243,49 +285,59 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="880" y="353" key="#Project_Structure" timestamp="1600825701636">
-      <screen x="0" y="23" width="2560" height="1330" />
+    <state x="-1260" y="285" key="#Project_Structure" timestamp="1600942936245">
+      <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
+    <state x="-1260" y="285" key="#Project_Structure/0.23.2560.1330/2560.23.1680.1027/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1600942936245" />
     <state x="880" y="353" key="#Project_Structure/0.23.2560.1330/2560.23.1680.1027/-1920.23.1920.1057@0.23.2560.1330" timestamp="1600825701636" />
-    <state x="744" y="350" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600824869318">
-      <screen x="0" y="23" width="2560" height="1330" />
+    <state x="-1362" y="283" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600943714101">
+      <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
+    <state x="-1362" y="283" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2560.1330/2560.23.1680.1027/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1600943714101" />
     <state x="744" y="350" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2560.1330/2560.23.1680.1027/-1920.23.1920.1057@0.23.2560.1330" timestamp="1600824869318" />
     <state x="1018" y="442" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600842074625">
       <screen x="0" y="23" width="2560" height="1330" />
     </state>
     <state x="1018" y="442" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.2560.1330/2560.23.1680.1027/-1920.23.1920.1057@0.23.2560.1330" timestamp="1600842074625" />
-    <state width="2518" height="367" key="GridCell.Tab.0.bottom" timestamp="1600939828712">
-      <screen x="0" y="23" width="2560" height="1330" />
+    <state width="1878" height="365" key="GridCell.Tab.0.bottom" timestamp="1600944277067">
+      <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
-    <state width="2518" height="367" key="GridCell.Tab.0.bottom/0.23.2560.1330/2560.23.1680.1027/-1920.23.1920.1057@0.23.2560.1330" timestamp="1600939828712" />
-    <state width="2518" height="367" key="GridCell.Tab.0.center" timestamp="1600939828711">
-      <screen x="0" y="23" width="2560" height="1330" />
+    <state width="1878" height="365" key="GridCell.Tab.0.bottom/0.23.2560.1330/2560.23.1680.1027/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1600944277067" />
+    <state width="2518" height="366" key="GridCell.Tab.0.bottom/0.23.2560.1330/2560.23.1680.1027/-1920.23.1920.1057@0.23.2560.1330" timestamp="1600940108494" />
+    <state width="1878" height="365" key="GridCell.Tab.0.center" timestamp="1600944277067">
+      <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
-    <state width="2518" height="367" key="GridCell.Tab.0.center/0.23.2560.1330/2560.23.1680.1027/-1920.23.1920.1057@0.23.2560.1330" timestamp="1600939828711" />
-    <state width="2518" height="367" key="GridCell.Tab.0.left" timestamp="1600939828710">
-      <screen x="0" y="23" width="2560" height="1330" />
+    <state width="1878" height="365" key="GridCell.Tab.0.center/0.23.2560.1330/2560.23.1680.1027/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1600944277067" />
+    <state width="2518" height="366" key="GridCell.Tab.0.center/0.23.2560.1330/2560.23.1680.1027/-1920.23.1920.1057@0.23.2560.1330" timestamp="1600940108493" />
+    <state width="1878" height="365" key="GridCell.Tab.0.left" timestamp="1600944277066">
+      <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
-    <state width="2518" height="367" key="GridCell.Tab.0.left/0.23.2560.1330/2560.23.1680.1027/-1920.23.1920.1057@0.23.2560.1330" timestamp="1600939828710" />
-    <state width="2518" height="367" key="GridCell.Tab.0.right" timestamp="1600939828712">
-      <screen x="0" y="23" width="2560" height="1330" />
+    <state width="1878" height="365" key="GridCell.Tab.0.left/0.23.2560.1330/2560.23.1680.1027/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1600944277066" />
+    <state width="2518" height="366" key="GridCell.Tab.0.left/0.23.2560.1330/2560.23.1680.1027/-1920.23.1920.1057@0.23.2560.1330" timestamp="1600940108493" />
+    <state width="1878" height="365" key="GridCell.Tab.0.right" timestamp="1600944277067">
+      <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
-    <state width="2518" height="367" key="GridCell.Tab.0.right/0.23.2560.1330/2560.23.1680.1027/-1920.23.1920.1057@0.23.2560.1330" timestamp="1600939828712" />
-    <state width="2518" height="447" key="GridCell.Tab.1.bottom" timestamp="1600825639996">
-      <screen x="0" y="23" width="2560" height="1330" />
+    <state width="1878" height="365" key="GridCell.Tab.0.right/0.23.2560.1330/2560.23.1680.1027/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1600944277067" />
+    <state width="2518" height="366" key="GridCell.Tab.0.right/0.23.2560.1330/2560.23.1680.1027/-1920.23.1920.1057@0.23.2560.1330" timestamp="1600940108494" />
+    <state width="1878" height="365" key="GridCell.Tab.1.bottom" timestamp="1600944277068">
+      <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
+    <state width="1878" height="365" key="GridCell.Tab.1.bottom/0.23.2560.1330/2560.23.1680.1027/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1600944277068" />
     <state width="2518" height="447" key="GridCell.Tab.1.bottom/0.23.2560.1330/2560.23.1680.1027/-1920.23.1920.1057@0.23.2560.1330" timestamp="1600825639996" />
-    <state width="2518" height="447" key="GridCell.Tab.1.center" timestamp="1600825639995">
-      <screen x="0" y="23" width="2560" height="1330" />
+    <state width="1878" height="365" key="GridCell.Tab.1.center" timestamp="1600944277068">
+      <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
+    <state width="1878" height="365" key="GridCell.Tab.1.center/0.23.2560.1330/2560.23.1680.1027/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1600944277068" />
     <state width="2518" height="447" key="GridCell.Tab.1.center/0.23.2560.1330/2560.23.1680.1027/-1920.23.1920.1057@0.23.2560.1330" timestamp="1600825639995" />
-    <state width="2518" height="447" key="GridCell.Tab.1.left" timestamp="1600825639995">
-      <screen x="0" y="23" width="2560" height="1330" />
+    <state width="1878" height="365" key="GridCell.Tab.1.left" timestamp="1600944277067">
+      <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
+    <state width="1878" height="365" key="GridCell.Tab.1.left/0.23.2560.1330/2560.23.1680.1027/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1600944277067" />
     <state width="2518" height="447" key="GridCell.Tab.1.left/0.23.2560.1330/2560.23.1680.1027/-1920.23.1920.1057@0.23.2560.1330" timestamp="1600825639995" />
-    <state width="2518" height="447" key="GridCell.Tab.1.right" timestamp="1600825639995">
-      <screen x="0" y="23" width="2560" height="1330" />
+    <state width="1878" height="365" key="GridCell.Tab.1.right" timestamp="1600944277068">
+      <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
+    <state width="1878" height="365" key="GridCell.Tab.1.right/0.23.2560.1330/2560.23.1680.1027/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1600944277068" />
     <state width="2518" height="447" key="GridCell.Tab.1.right/0.23.2560.1330/2560.23.1680.1027/-1920.23.1920.1057@0.23.2560.1330" timestamp="1600825639995" />
     <state x="868" y="438" key="IDE.errors.dialog" timestamp="1600391934836">
       <screen x="0" y="23" width="2560" height="1330" />
@@ -299,9 +351,10 @@
       <screen x="0" y="23" width="2560" height="1330" />
     </state>
     <state x="100" y="123" width="2360" height="1130" key="dock-window-1/0.23.2560.1330/2560.23.1680.1027/-1920.23.1920.1057@0.23.2560.1330" timestamp="1600392009158" />
-    <state x="946" y="445" width="816" height="550" key="find.popup" timestamp="1600938001894">
-      <screen x="0" y="23" width="2560" height="1330" />
+    <state x="-1210" y="358" width="694" height="486" key="find.popup" timestamp="1600944094062">
+      <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
+    <state x="-1210" y="358" width="694" height="486" key="find.popup/0.23.2560.1330/2560.23.1680.1027/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1600944094062" />
     <state x="946" y="445" width="816" height="550" key="find.popup/0.23.2560.1330/2560.23.1680.1027/-1920.23.1920.1057@0.23.2560.1330" timestamp="1600938001894" />
   </component>
   <component name="XDebuggerManager">

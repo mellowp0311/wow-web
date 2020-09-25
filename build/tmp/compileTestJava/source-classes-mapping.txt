@@ -1,2 +1,0 @@
-com/wow/web/WebApplicationTests.java
- com.wow.web.WebApplicationTests

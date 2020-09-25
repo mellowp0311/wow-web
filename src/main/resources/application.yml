@@ -1,8 +1,21 @@
-
+server:
+  port: 8080
+  compression:
+    min-response-size: 1
+    enabled: true
+    
 spring:
+  application:
+    name: wow-web
+  profiles:
+    active: local
   thymeleaf:
     prefix : /views/
     suffix : .html
     cache : false
     check-template: false
 
+# logging config
+logging:
+  config: classpath:logback-spring.xml
+  file: ${spring.application.name}

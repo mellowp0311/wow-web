@@ -1,11 +1,11 @@
 plugins {
-    id 'org.springframework.boot' version '2.3.4.RELEASE'
-    id 'io.spring.dependency-management' version '1.0.10.RELEASE'
     id 'java'
     id 'war'
+    id 'org.springframework.boot' version '2.1.9.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.8.RELEASE'
 }
 
-group = 'com.wow'
+group = 'com.wow.web'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '1.8'
 
@@ -14,16 +14,52 @@ configurations {
         extendsFrom annotationProcessor
     }
 }
+
 repositories {
     mavenCentral()
+}
+
+war {
+    enabled = true
+}
+bootWar {
+    archiveFileName = 'web.war'
+}
+
+wrapper {
+    distributionType = Wrapper.DistributionType.ALL
+    distributionUrl = "http://services.gradle.org/distributions/gradle-5.6.3-all.zip"
+}
+
+ext {
+    set('springCloudVersion', "Greenwich.SR3")
+}
+
+dependencyManagement {
+    imports {
+        mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
+    }
 }
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-actuator'
     implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
     implementation 'org.springframework.boot:spring-boot-starter-web'
+
+    // https://mvnrepository.com/artifact/ch.qos.logback/logback-classic
+    implementation group: 'ch.qos.logback', name: 'logback-classic', version: '1.2.3'
+    // https://mvnrepository.com/artifact/ch.qos.logback.contrib/logback-json-classic
+    implementation group: 'ch.qos.logback.contrib', name: 'logback-json-classic', version: '0.1.5'
+    // https://mvnrepository.com/artifact/ch.qos.logback.contrib/logback-jackson
+    implementation group: 'ch.qos.logback.contrib', name: 'logback-jackson', version: '0.1.5'
+
+    implementation 'org.apache.commons:commons-lang3:3.9'
+    providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
+
+    // https://mvnrepository.com/artifact/javax.el/javax.el-api
+    compile group: 'javax.el', name: 'javax.el-api', version: '3.0.0'
+
     compileOnly 'org.projectlombok:lombok'
-    developmentOnly 'org.springframework.boot:spring-boot-devtools'
     annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation('org.springframework.boot:spring-boot-starter-test') {
