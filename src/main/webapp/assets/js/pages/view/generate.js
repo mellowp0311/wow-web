@@ -1,8 +1,14 @@
 
 const generator = {
 
-    imgPath : "../assets/images",
+    imgPath : "../web/assets/images",
 
+    /**
+     * 레이드 일정 설정
+     * - 3일, 5일, 7일 리셋정보 표기 부분
+     *
+     * @param data
+     */
     main3DayRaidCard: function(data){
         $('#main_3d_period').append(data.raidStartDate + ' ~ ' + data.raidEndDate);
         $(data.betweenDayList).each(function(i, item){
@@ -10,7 +16,6 @@ const generator = {
             $('#main_3d_days h5').eq(i).text(item.day);
         });
     },
-
     main5DayRaidCard: function(data){
         $('#main_5d_period').append(data.raidStartDate + ' ~ ' + data.raidEndDate);
         $(data.betweenDayList).each(function(i, item){
@@ -18,7 +23,6 @@ const generator = {
             $('#main_5d_days h5').eq(i).text(item.day);
         });
     },
-
     main7DayRaidCard: function(data){
         $('#main_7d_period').append(data.raidStartDate + ' ~ ' + data.raidEndDate);
         $(data.betweenDayList).each(function(i, item){
@@ -27,10 +31,21 @@ const generator = {
         });
     },
 
+    /**
+     * 아이콘 경로
+     *
+     * @param characterJob
+     * @returns {string}
+     */
     getCharacterIconPath: function(characterJob){
         return this.imgPath + "/icon/" + characterJob + ".png";
     },
 
+    /**
+     * 대시보드 내 케릭터 목록 GRID
+     *
+     * @param characterList
+     */
     mainCharacterList: function(characterList){
         let col;
         const count = characterList.length;
@@ -52,22 +67,58 @@ const generator = {
             dd += '<i class="mdi mdi-dots-vertical font-20"></i></a><div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href="#">편집</a>';
             dd += '</div></div></div><hr>';
             dd += '<div class="text-muted"><div class="row">';
-            dd += '<div class="col-3"><div><p class="text-truncate mb-0">서버</p><h5 class="mb-sm-0">'+item.serverCodeName+'</h5></div></div>';
-            dd += '<div class="col-3"><div><p class="text-truncate mb-0">종족</p><h5 class="mb-sm-0">'+item.tribeCodeName+'</h5></div></div>';
-            dd += '<div class="col-3"><div><p class="text-truncate mb-0">전문기술1</p><h5 class="mb-sm-0">'+item.firstExpertise+'</h5></div></div>';
-            dd += '<div class="col-3"><div><p class="text-truncate mb-0">전문기술2</p><h5 class="mb-sm-0">'+item.secondExpertise+'</h5></div></div>';
+            dd += '<div class="col-3"><div><p class="text-truncate mb-0">서버</p><h5 class="mb-sm-0 font-13">'+item.serverCodeName+'</h5></div></div>';
+            dd += '<div class="col-3"><div><p class="text-truncate mb-0">종족</p><h5 class="mb-sm-0 font-13">'+item.tribeCodeName+'</h5></div></div>';
+            dd += '<div class="col-3"><div><p class="text-truncate mb-0">전문기술1</p><h5 class="mb-sm-0 font-13">'+item.firstExpertise+'</h5></div></div>';
+            dd += '<div class="col-3"><div><p class="text-truncate mb-0">전문기술2</p><h5 class="mb-sm-0 font-13">'+item.secondExpertise+'</h5></div></div>';
             dd += '</div></div></div></div>';
             wrap += cb + mb + dd + '</div>';
             $('#characterRow').append(wrap)
         });
     },
 
+    /**
+     * 케릭별 레이드 참여현황 테이블 GRID
+     *
+     * @param raidParticipateList
+     */
+    mainRaidParticipateByCharacter: function(raidParticipateList){
+        let tr = '';
+        // 번호 | 사원 | 검둥 | 화심 | 폐허 | 줄구 | 오닉 | 수입 | 지출 | 합계
+        $('#raid-participate').html('');
+        $(raidParticipateList).each(function(i, item){
+            tr += '<tr>';
+            tr += '    <th scope="row">'+(i+1)+'</th>';
+            tr += '    <th>'+item.characterName+'</th>';
+            tr += '    <td>'+generator.makeRaidStatusBtn(item.at, item.characterSeq, 'AT')+'</td>';
+            tr += '    <td>'+generator.makeRaidStatusBtn(item.bl, item.characterSeq, 'BL')+'</td>';
+            tr += '    <td>'+generator.makeRaidStatusBtn(item.mc, item.characterSeq, 'MC')+'</td>';
+            tr += '    <td>'+generator.makeRaidStatusBtn(item.ar, item.characterSeq, 'AR')+'</td>';
+            tr += '    <td>'+generator.makeRaidStatusBtn(item.zg, item.characterSeq, 'ZG')+'</td>';
+            tr += '    <td>'+generator.makeRaidStatusBtn(item.ox, item.characterSeq, 'OX')+'</td>';
+            tr += '    <td>'+numberWithCommas(item.totalProfit)+'</td>';
+            tr += '    <td>'+numberWithCommas(item.totalExpense)+'</td>';
+            tr += '    <td>'+numberWithCommas(Number(item.totalProfit) - Number(item.totalExpense))+'</td>';
+            tr += '</tr>';
+        });
+        $('#raid-participate').html(tr);
+        $('[data-toggle="popover"]').popover({ html : true})
+    },
+
+    /**
+     * 레이드 참여에 따른 버튼 생성
+     *
+     * @param obj
+     * @param characterSeq
+     * @param code
+     * @returns {string}
+     */
     makeRaidStatusBtn: function(obj, characterSeq, code){
         let option = {
             btnText : '불참',
             btnClass : 'btn-bordered-primary',
             title: '레이드를 예약 하세요.',
-            content: '<p>현재 예약된 레이드 공대가 없습니다.<br /><a onclick=generator.modal()><code>여기</code></a>를 클릭하여 등록하세요.</p>'
+            content: '<p>현재 예약된 레이드 공대가 없습니다.<br /><a><code>여기</code></a>를 클릭하여 등록하세요.</p>'
         };
         let isExist = obj != undefined;
         if( isExist ){
@@ -90,36 +141,17 @@ const generator = {
                 option.btnClass = 'btn-bordered-purple';
             }
         }
-        let element = '<button type="button" class="btn btn-xs waves-effect waves-light '+option.btnClass+'" raidCode=' + code + ' characterSeq=' + characterSeq;
-        element += ' data-container="body" data-toggle="popover" data-placement="top" data-content="'+option.content+'" data-original-title="'+option.title+'" >';
+        let element = '<button type="button" class="btn btn-xs waves-effect waves-light btn-raid-status '+option.btnClass+'" raidCode=' + code + ' characterSeq=' + characterSeq;
+        element += ' data-container="body" data-toggle="popover" data-trigger="focus" data-placement="right" data-content="'+option.content+'" data-original-title="'+option.title+'" >';
         element += option.btnText + '</button>';
         return element;
     },
 
-    mainRaidParticipateByCharacter: function(raidParticipateList){
-        let tr = '';
-        // 번호 | 사원 | 검둥 | 화심 | 폐허 | 줄구 | 오닉 | 수입 | 지출 | 합계
-        $(raidParticipateList).each(function(i, item){
-            tr += '<tr>';
-            tr += '    <th scope="row">'+(i+1)+'</th>';
-            tr += '    <th>'+item.characterName+'</th>';
-            tr += '    <td>'+generator.makeRaidStatusBtn(item.at, item.characterSeq, 'AT')+'</td>';
-            tr += '    <td>'+generator.makeRaidStatusBtn(item.bl, item.characterSeq, 'BL')+'</td>';
-            tr += '    <td>'+generator.makeRaidStatusBtn(item.mc, item.characterSeq, 'MC')+'</td>';
-            tr += '    <td>'+generator.makeRaidStatusBtn(item.ar, item.characterSeq, 'AR')+'</td>';
-            tr += '    <td>'+generator.makeRaidStatusBtn(item.zg, item.characterSeq, 'ZG')+'</td>';
-            tr += '    <td>'+generator.makeRaidStatusBtn(item.ox, item.characterSeq, 'OX')+'</td>';
-            tr += '    <td>'+numberWithCommas(item.totalProfit)+'</td>';
-            tr += '    <td>'+numberWithCommas(item.totalExpense)+'</td>';
-            tr += '    <td>'+numberWithCommas(Number(item.totalProfit) - Number(item.totalExpense))+'</td>';
-            tr += '</tr>';
-        });
-        $('#raid-participate').html(tr);
-        $('[data-toggle="popover"]').popover({ html : true})
-    },
 
-    modal: function(){
-        console.log(111);
+    makeCharacterSelectBox: function(characterList){
+        $(characterList).each(function(i, item){
+            $('#modal_character').append('<option value="'+item.characterSeq+'">'+item.characterName+'</option>');
+        });
     }
 
 }

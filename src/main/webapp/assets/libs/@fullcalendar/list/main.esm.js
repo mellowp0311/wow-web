@@ -285,7 +285,7 @@ var ListView = /** @class */ (function (_super) {
         }, '<td class="' + (theme.getClass('tableListHeading') ||
             theme.getClass('widgetHeader')) + '" colspan="3">' +
             (mainFormat ?
-                buildGotoAnchorHtml(options, dateEnv, dayDate, { 'class': 'fc-list-heading-main' }, htmlEscape(dateEnv.format(dayDate, mainFormat)) // inner HTML
+                buildGotoAnchorHtml(options, dateEnv, dayDate, { 'class': 'fc-list-heading-dashboard' }, htmlEscape(dateEnv.format(dayDate, mainFormat)) // inner HTML
                 ) :
                 '') +
             (altFormat ?

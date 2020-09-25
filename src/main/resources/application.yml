@@ -19,3 +19,17 @@ spring:
 logging:
   config: classpath:logback-spring.xml
   file: ${spring.application.name}
+
+
+---
+spring:
+  profiles: local
+
+server:
+  servlet:
+    context-path: /web
+
+
+---
+spring:
+  profiles: dev

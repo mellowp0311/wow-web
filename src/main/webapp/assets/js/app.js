@@ -84,7 +84,7 @@ File: Layouts Js File
             }
         });
 
-        // sidebar - main menu
+        // sidebar - dashboard menu
         if ($("#side-menu").length) { 
             var navCollapse = $('#side-menu li .collapse');
 
@@ -124,9 +124,9 @@ File: Layouts Js File
 
 
         // handling two columns menu if present
-        var twoColSideNav = $("#two-col-sidenav-main");
+        var twoColSideNav = $("#two-col-sidenav-dashboard");
         if (twoColSideNav.length) {
-            var twoColSideNavItems = $("#two-col-sidenav-main .nav-link");
+            var twoColSideNavItems = $("#two-col-sidenav-dashboard .nav-link");
             var sideSubMenus = $(".twocolumn-menu-item");
 
             // showing/displaying tooltip based on screen size
@@ -203,7 +203,7 @@ File: Layouts Js File
                     // opening menu
                     var matchingItem = null;
                     var targetEl = '#' + $(this).parents('.twocolumn-menu-item').attr("id");
-                    $("#two-col-sidenav-main .nav-link").each(function () {
+                    $("#two-col-sidenav-dashboard .nav-link").each(function () {
                         if ($(this).attr('href') === targetEl) {
                             matchingItem = $(this);
                         }
@@ -291,7 +291,7 @@ function ($) {
             }
         });
 
-        // Topbar - main menu
+        // Topbar - dashboard menu
         $('.navbar-toggle').on('click', function (event) {
             $(this).toggleClass('open');
             $('#navigation').slideToggle(400);
@@ -941,7 +941,7 @@ function ($) {
 
 
 }(window.jQuery),
-//initializing main application module
+//initializing dashboard application module
 function ($) {
     "use strict";
     $.App.init();

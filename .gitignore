@@ -2,7 +2,7 @@ HELP.md
 .gradle
 build/
 !gradle/wrapper/gradle-wrapper.jar
-!**/src/main/**
+!**/src/dashboard/**
 !**/src/test/**
 LOG_PATH_IS_UNDEFINED
 ### STS ###
