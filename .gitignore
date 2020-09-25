@@ -4,7 +4,7 @@ build/
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**
 !**/src/test/**
-
+LOG_PATH_IS_UNDEFINED
 ### STS ###
 .apt_generated
 .classpath

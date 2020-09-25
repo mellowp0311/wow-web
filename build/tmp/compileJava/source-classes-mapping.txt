@@ -1,6 +1,0 @@
-com/wow/web/WebApplication.java
- com.wow.web.WebApplication
-com/wow/web/ServletInitializer.java
- com.wow.web.ServletInitializer
-com/wow/web/controller/RouteController.java
- com.wow.web.controller.RouteController
