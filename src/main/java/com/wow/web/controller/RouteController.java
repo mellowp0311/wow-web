@@ -19,8 +19,11 @@ import javax.servlet.http.HttpSession;
 public class RouteController {
 
 
-    @RequestMapping("/login")
-    public String login(){
+    @RequestMapping(value = {"/web/login", "/login"})
+    public String login(HttpServletRequest request){
+        if(!request.getSession().isNew()){
+            request.getSession().invalidate();
+        }
         return "login";
     }
 
@@ -28,7 +31,6 @@ public class RouteController {
     public String main(HttpServletRequest request){
         HttpSession session = request.getSession();
         session.setAttribute("userSeq", request.getParameter("userSeq"));
-        log.info("session: {}", session.getAttribute("userSeq"));
         return "redirect:/dashboard";
     }
 
@@ -39,7 +41,5 @@ public class RouteController {
         modelAndView.addObject("userSeq", request.getSession().getAttribute("userSeq"));
         return modelAndView;
     }
-
-
 
 }

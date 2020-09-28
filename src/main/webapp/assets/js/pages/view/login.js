@@ -8,7 +8,7 @@ const login = {
 
     init: function(){
         if(window.location.hostname.indexOf("dragon") > -1){
-            this.domain = 'https://dragonfly14.synology.me:7071/api/';
+            this.domain = 'https://dragonfly14.synology.me:7071/api';
         } else {
             this.domain = 'http://localhost:7070';
         }

@@ -2,7 +2,7 @@
 <html xmlns:th="http://www.thymeleaf.org">
     <head>
         <meta charset="utf-8" />
-        <title>우취 | 대장군타우렌의 자식들</title>
+        <title>TAUREN</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
         <meta content="Coderthemes" name="author" />
@@ -21,10 +21,9 @@
             .raid tr { text-align: center }
             .navbar-custom { background-color: #000 }
             .popover-body > div > p {margin-bottom:5px;}
-            .popover-body > div > p > code {font-size: 100%; color:#6559cc}
             .popover-body p a {cursor:pointer;}
             .popover-body p a code {
-                font-size: 100%;
+                font-size: 140%;
                 color: #f672a7;
                 word-wrap: break-word;
             }
@@ -241,7 +240,7 @@
                                 <img src="../web/assets/images/logo-sm.png" alt="" height="24">
                             </span>
                             <span class="logo-lg">
-                                <img src="../web/assets/images/logo-light.png" alt="" height="20">
+                                <img src="../web/assets/images/logo-gold.png" alt="" height="40">
                             </span>
                         </a>
                     </div>
@@ -352,9 +351,9 @@
                                     <h4 class="page-title">와우 현황판</h4>
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Minton</a></li>
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Layouts</a></li>
-                                            <li class="breadcrumb-item active">Horizontal</li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">타우렌</a></li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">와우현황판</a></li>
+                                            <li class="breadcrumb-item active">대시보드</li>
                                         </ol>
                                     </div>
                                 </div>
@@ -591,124 +590,6 @@
 
                             <!-- [모달] 레이드 등록 폼-->
                             <dic class="col-xl-9">
-                                <div id="modal_register_raid_character" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h4 class="modal-title">Raid popup modal</h4>
-                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                                            </div>
-                                            <div class="modal-body p-4">
-                                                <div class="row">
-                                                    <div class="col-md-12">
-                                                        <label for="modal_raid_type" class="control-label">레이드 유형</label>
-                                                        <select id="modal_raid_type" class="selectpicker mo-s" data-style="btn-outline-pink" disabled>
-                                                            <option value="AR">안퀴라즈폐허</option>
-                                                            <option value="AT">안퀴라즈사원</option>
-                                                            <option value="BL">검은날개둥지</option>
-                                                            <option value="MC">화산심장부</option>
-                                                            <option value="OX">오닉시아의둥지</option>
-                                                            <option value="ZG">줄구룹</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-md-12" style="margin-top: 10px">
-                                                        <label for="modal_character" class="control-label">참여 케릭터</label>
-                                                        <select id="modal_character" class="selectpicker mo-s" data-style="btn-outline-danger" disabled>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-md-12" style="margin-top: 10px">
-                                                        <div class="form-group mb-0">
-                                                            <label class="col-form-label">레이드 날짜</label>
-                                                            <div class="input-group">
-                                                                <input type="text" id="modal_raid_date" class="form-control mo-i" data-provide="datepicker" data-date-format="yyyy.M.dd" data-date-autoclose="true" placeholder="2020.09.25">
-                                                                <div class="input-group-append">
-                                                                    <span class="input-group-text"><i class="ri-calendar-event-fill"></i></span>
-                                                                    <select class="selectpicker" id="modal_raid_date_time" data-style="btn-light mo-s" style="margin-left:10px">
-                                                                        <option value="23">23</option>
-                                                                        <option value="22">22</option>
-                                                                        <option value="21">21</option>
-                                                                        <option value="20">20</option>
-                                                                        <option value="19">19</option>
-                                                                        <option value="18">18</option>
-                                                                        <option value="17">17</option>
-                                                                        <option value="16">16</option>
-                                                                        <option value="15">15</option>
-                                                                        <option value="14">14</option>
-                                                                        <option value="13">13</option>
-                                                                        <option value="12">12</option>
-                                                                        <option value="11">11</option>
-                                                                        <option value="10">10</option>
-                                                                        <option value="09">09</option>
-                                                                        <option value="08">08</option>
-                                                                        <option value="07">07</option>
-                                                                        <option value="06">06</option>
-                                                                        <option value="05">05</option>
-                                                                        <option value="04">04</option>
-                                                                        <option value="03">03</option>
-                                                                        <option value="02">02</option>
-                                                                        <option value="01">01</option>
-                                                                        <option value="00">00</option>
-                                                                    </select>
-                                                                    <select id="modal_raid_date_minute" class="selectpicker mo-s" data-style="btn-light" style="margin-left:10px">
-                                                                        <option value="00">00</option>
-                                                                        <option value="30">30</option>
-                                                                    </select>
-                                                                </div>
-                                                            </div><!-- input-group -->
-                                                        </div>
-
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-md-12" style="margin-top: 10px">
-                                                        <div class="form-group">
-                                                            <label for="modal_raid_title" class="control-label">공대 타이틀</label>
-                                                            <input type="text" id="modal_raid_title" class="form-control mo-i" placeholder="김씨막공 5천올분 전클모집">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-md-12">
-                                                        <div class="form-group">
-                                                            <label for="modal_captain_character" class="control-label">공대장 케릭터</label>
-                                                            <input type="text" id="modal_captain_character" class="form-control mo-i" placeholder="김씨대장" maxlength="10">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-md-6">
-                                                        <div class="form-group">
-                                                            <label for="modal_profit" class="control-label">수익</label>
-                                                            <input type="text" class="form-control mo-i" id="modal_profit" placeholder="1300" value="0" maxlength="5">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <div class="form-group">
-                                                            <label for="modal_expense" class="control-label">지출</label>
-                                                            <input type="text" class="form-control mo-i" id="modal_expense" placeholder="100" value="0" maxlength="5">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-md-12">
-                                                        <div class="form-group no-margin">
-                                                            <label for="modal_memo" class="control-label">메모</label>
-                                                            <textarea class="form-control mo-t" id="modal_memo" placeholder="레드엔트 부탱이였는데, 허구헌날 푹찍당함" maxlength="200"></textarea>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" id="btn-raid-close" class="btn btn-secondary waves-effect" data-dismiss="modal">Close</button>
-                                                <button type="button" id="btn-raid-save" class="btn btn-info waves-effect waves-light">Save</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div><!-- /.modal -->
                                 <div class="card" style="min-height:460px">
                                     <div class="card-body">
                                         <h4 class="header-title" style="font-weight:bold;">케릭터별 레이드 참여현황</h4>
@@ -758,25 +639,126 @@
                     </div> <!-- container -->
 
                 </div> <!-- content -->
+                <div class="row">
+                    <div id="modal_register_raid_character" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Raid popup modal</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                </div>
+                                <div class="modal-body p-4">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <label for="modal_raid_type" class="control-label">레이드 유형</label>
+                                            <select id="modal_raid_type" class="selectpicker mo-s" data-style="btn-outline-pink" disabled>
+                                                <option value="AR">안퀴라즈폐허</option>
+                                                <option value="AT">안퀴라즈사원</option>
+                                                <option value="BL">검은날개둥지</option>
+                                                <option value="MC">화산심장부</option>
+                                                <option value="OX">오닉시아의둥지</option>
+                                                <option value="ZG">줄구룹</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12" style="margin-top: 10px">
+                                            <label for="modal_character" class="control-label">참여 케릭터</label>
+                                            <select id="modal_character" class="selectpicker mo-s" data-style="btn-outline-danger" disabled>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12" style="margin-top: 10px">
+                                            <div class="form-group mb-0">
+                                                <label class="col-form-label">레이드 날짜</label>
+                                                <div class="input-group">
+                                                    <input type="text" id="modal_raid_date" class="form-control mo-i" data-provide="datepicker" data-date-format="yyyy.M.dd" data-date-autoclose="true" placeholder="2020.09.25">
+                                                    <div class="input-group-append">
+                                                        <span class="input-group-text"><i class="ri-calendar-event-fill"></i></span>
+                                                        <select class="selectpicker" id="modal_raid_date_time" data-style="btn-light mo-s" style="margin-left:10px">
+                                                            <option value="23">23</option>
+                                                            <option value="22">22</option>
+                                                            <option value="21">21</option>
+                                                            <option value="20">20</option>
+                                                            <option value="19">19</option>
+                                                            <option value="18">18</option>
+                                                            <option value="17">17</option>
+                                                            <option value="16">16</option>
+                                                            <option value="15">15</option>
+                                                            <option value="14">14</option>
+                                                            <option value="13">13</option>
+                                                            <option value="12">12</option>
+                                                            <option value="11">11</option>
+                                                            <option value="10">10</option>
+                                                            <option value="09">09</option>
+                                                            <option value="08">08</option>
+                                                            <option value="07">07</option>
+                                                            <option value="06">06</option>
+                                                            <option value="05">05</option>
+                                                            <option value="04">04</option>
+                                                            <option value="03">03</option>
+                                                            <option value="02">02</option>
+                                                            <option value="01">01</option>
+                                                            <option value="00">00</option>
+                                                        </select>
+                                                        <select id="modal_raid_date_minute" class="selectpicker mo-s" data-style="btn-light" style="margin-left:10px">
+                                                            <option value="00">00</option>
+                                                            <option value="30">30</option>
+                                                        </select>
+                                                    </div>
+                                                </div><!-- input-group -->
+                                            </div>
 
-              <!-- Footer Start -->
-                <footer class="footer">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <script>document.write(new Date().getFullYear())</script> &copy; Minton theme by <a href="">Coderthemes</a>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="text-md-right footer-links d-none d-sm-block">
-                                    <a href="javascript:void(0);">About Us</a>
-                                    <a href="javascript:void(0);">Help</a>
-                                    <a href="javascript:void(0);">Contact Us</a>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12" style="margin-top: 10px">
+                                            <div class="form-group">
+                                                <label for="modal_raid_title" class="control-label">공대 타이틀</label>
+                                                <input type="text" id="modal_raid_title" class="form-control mo-i" placeholder="김씨막공 5천올분 전클모집">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label for="modal_captain_character" class="control-label">공대장 케릭터</label>
+                                                <input type="text" id="modal_captain_character" class="form-control mo-i" placeholder="김씨대장" maxlength="10">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="modal_profit" class="control-label">수익</label>
+                                                <input type="text" class="form-control mo-i" id="modal_profit" placeholder="1300" value="0" maxlength="5">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="modal_expense" class="control-label">지출</label>
+                                                <input type="text" class="form-control mo-i" id="modal_expense" placeholder="100" value="0" maxlength="5">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group no-margin">
+                                                <label for="modal_memo" class="control-label">메모</label>
+                                                <textarea class="form-control mo-t" id="modal_memo" placeholder="레드엔트 부탱이였는데, 허구헌날 푹찍당함" maxlength="200"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" id="btn-raid-close" class="btn btn-secondary waves-effect" data-dismiss="modal">Close</button>
+                                    <button type="button" id="btn-raid-save" class="btn btn-info waves-effect waves-light">Save</button>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </footer>
-              <!-- end Footer -->
+                    </div><!-- /.modal -->
+                </div>
 
             </div>
 

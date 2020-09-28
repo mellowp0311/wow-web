@@ -2,13 +2,22 @@
 const empty = '';
 const dashboard = {
 
+    /**
+     * 도메인 정보
+     */
     domain: '',
 
+    /**
+     * 내 케릭터 목록
+     */
     characterList: [],
 
+    /**
+     * 초기 실행 함수
+     */
     init: function(){
         if(window.location.hostname.indexOf("dragon") > -1){
-            this.domain = 'https://dragonfly14.synology.me:7071/api/';
+            this.domain = 'https://dragonfly14.synology.me:7071/api';
         } else {
             this.domain = 'http://localhost:7070';
         }
@@ -16,6 +25,9 @@ const dashboard = {
         this.initDataLoad();
     },
 
+    /**
+     * 초기 화면 이벤트 설정
+     */
     initEvent: function(){
 
         // 레이드 등록 모달 날짜 정보 설정
@@ -23,10 +35,13 @@ const dashboard = {
         $('#modal_raid_date_time').val(moment().format('HH')).selectpicker('refresh');
         // 레이드 등록 모달 생성
         $(document).on('click', '#raid-participate button', function(){
+            console.log('click');
             $('#modal_raid_type').val($(this).attr('raidCode')).selectpicker('refresh');
             $('#modal_character').val($(this).attr('characterSeq')).selectpicker('refresh');
             let targetId = '#' + $(this).attr('aria-describedby');
+            console.log('--> ' + $(targetId).length);
             if($(targetId).length > 0){
+                console.log('--> IF IN')
                $(targetId).find('a').attr('data-toggle', 'modal').attr('data-target', '#modal_register_raid_character');
             }
         });
@@ -39,6 +54,9 @@ const dashboard = {
 
     },
 
+    /**
+     * 초기 데이터 조회
+     */
     initDataLoad: function(){
         $.ajax({
             url : this.domain + '/main/dashboard',
@@ -124,8 +142,11 @@ const dashboard = {
     },
     refreshRaidParticipateByCharacter: function(){
         $.ajax({
-            url : this.domain + '/raid/participate/character?userSeq=1',
+            url : this.domain + '/raid/participate/character',
             type : 'GET',
+            data: {
+                userSeq: $('#userSeq').val()
+            },
             dataType : 'json',
             success : function(response){
                 dashboard.gridRaidParticipateByCharacter(response.data);
@@ -134,7 +155,19 @@ const dashboard = {
                 console.log('error');
             }
         });
-    }
+    },
+    logout: function(){
+        $.ajax({
+            url : '/web/logout',
+            type : 'GET',
+            success : function(){
+
+            },
+            error: function(e){
+                console.log(e);
+            }
+        });
+    },
 
 
 
